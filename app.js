@@ -3,7 +3,10 @@ const cors = require('cors');
 const userAuthRoutes = require('./routes/authRoutes');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: 'https://comforting-sunshine-db8419.netlify.app/',
+    credentials: true
+}));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
