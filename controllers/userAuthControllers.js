@@ -19,7 +19,7 @@ const userAuthControllers = {
         const email_template = email_templates.forgot_password_template(username,token);
         const email_body = email_template.body;
         const email_subject = email_template.subject;
-        const email_to = "manojprabhagar90@gmail.com";
+        const email_to = mailId;
         common_utils.email_send(email_to,email_subject,email_body);
         console.log('Forgot password...');
         response.status(200).json({success:true,message:'Link to password reset sent to your mail'});
