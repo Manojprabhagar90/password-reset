@@ -65,7 +65,7 @@ const email_templates = {
                                     <p>Hello ${username},</p>
                                     <p>We received a request to reset your password. If you made this request, please click the button below to reset your password.</p>
                                     <p>If you did not request this change, please ignore this email.</p>
-                                    <a href=${process.env.FRONT_BASE_URL}/reset_password/${token} class="reset-button">Reset Your Password</a>
+                                    <a href=${process.env.FRONT_BASE_URL}reset_password/${token} class="reset-button">Reset Your Password</a>
                                 </div>
                                 <div class="footer">
                                     <p>&copy; 2024 YourWebsite. All rights reserved.</p>
